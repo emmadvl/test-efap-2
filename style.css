@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 180px;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 24px;
+   background-color: blueviolet;
+   color: aquamarine;
+   padding: 16px 32px;
+   border-radius: 4px;
+}
+
+.links{
+    display: flex;
+    gap: 24px;
+}
