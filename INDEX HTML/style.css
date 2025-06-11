@@ -1,0 +1,354 @@
+@import url(IMAGE/imagedefond.jpg);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+  background: url(IMAGE/imagedefond.jpg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+   z-index: 1;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.address {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 90%;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 32px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;  
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.refined-section {
+  background-color: #6b0000; /* rouge bordeaux foncé */
+  padding: 60px 20px;
+  color: white;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  width: 500px;
+}
+
+.text-block {
+  max-width: 550px;
+}
+
+.text-block h2 {
+  font-size: 4em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.text-block p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+.vibes-section {
+  background-color: #6b0000;
+  padding: 60px 20px;
+  color: white;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  width: 500px;
+}
+
+.text-block {
+  max-width: 550px;
+}
+
+.text-block h2 {
+  font-size: 4em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.text-block p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.rsvp-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('TON_IMAGE.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* assombrit légèrement si nécessaire */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.rsvp-section h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.rsvp-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;  
+  transition: background 0.3s ease;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+  font-family: 'Georgia', serif;
+}
+
+.bloc {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.bloc-rsvp {
+  background-color: #6b0000;  
+  color: #6b0000;
+  text-align: center;
+}
+
+.bloc-rsvp h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.bloc-rsvp button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  background-color: #6b0000;
+  color: black;
+  cursor: pointer;
+}
+
+.bloc-lieu {
+  background-color: #6b0000;
+  color: #6b0000;
+  text-align: center;
+}
+
+.bloc-lieu h2 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.etiquette {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+body {
+  background-color: #6b0000; /* bordeaux */
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #6b0000; /* bordeaux */
+  color: white;
+  text-align: left; /* aligne tout à gauche */
+  margin: 0;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  margin: 10px 0; /* espace autour de l'image */
+  max-width: 100%;
+  height: auto;
+}
+.info-section {
+  position: relative;
+  width: 100%;
+  height: 70vh; 
+  overflow: hidden;
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.address {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.4;
+}
+.text-block {
+  text-align: center;
+  margin: 20px;
+}
+
+.text-block h2 {
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+
+.text-block p {
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+.lieu-section {
+  background-color: #6b0000; /* même bordeaux foncé */
+  color: white;
+  padding: 80px 20px;
+}
+
+.lieu-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.lieu-label {
+  font-size: 1.5em;
+  flex: 1;
+  min-width: 150px;
+}
+
+.lieu-adresse {
+  flex: 2;
+  font-size: 4em;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lieu-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .lieu-adresse {
+    font-size: 2em;
+  }
+}
